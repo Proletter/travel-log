@@ -1,0 +1,13 @@
+*LOG entry -text
+*title -text
+*date visited
+*start date - datetime
+*end date -datetime
+*latitude -number
+*longitude -number
+*Description -text
+*Image -text
+*comments -text
+*rating - number 1 to 10
+*Created At - datetime
+*Updated At - datetime
