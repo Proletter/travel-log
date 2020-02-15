@@ -15,10 +15,9 @@ const app = express()
 mongoose.connect(process.env.DATABASE_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true
-}).catch((e)=>console.log(e))
+}).then(()=> console.log('mongodb connected...'))
+  .catch((e) => console.log(e))
 
-
-const port = process.env.PORT || 3000
 
 
 //middleware
@@ -46,7 +45,7 @@ app.use(errorHandler)
 
 
 
-
+const port = process.env.PORT || 1337
 app.listen(port, () => {
     console.log(`listening on ${port}`)
 })
